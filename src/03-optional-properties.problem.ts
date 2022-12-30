@@ -1,6 +1,12 @@
 import { expect, it } from "vitest";
 
-export const getName = (params: { first: string; last: string }) => {
+
+
+
+
+// IMPLICITLY SAY LAT IS AN OPTIONAL TYPE  ? <- BEFORE:
+
+export const getName = (params: { first: string; last?: string }) => {
   if (params.last) {
     return `${params.first} ${params.last}`;
   }

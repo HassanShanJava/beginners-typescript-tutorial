@@ -1,6 +1,20 @@
 import { expect, it } from "vitest";
 
-export const addTwoNumbers = (params) => {
+type MyParam={
+  first:number;
+  second:number;
+}
+
+
+
+// INTERFACE CAN ONLY REPRESENT OBJECTS
+// 
+// interface MyoBJECY{
+//   first:number;
+//   second:number;
+// }
+
+export const addTwoNumbers = (params:MyParam):number => {
   return params.first + params.second;
 };
 
