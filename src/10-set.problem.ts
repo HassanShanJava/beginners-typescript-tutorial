@@ -1,8 +1,8 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "./helpers/type-utils";
 
-const guitarists = new Set();
-
+const guitarists = new Set<string>(); //type arugument passed to class Set, it can be passed to function and cpnstructors too
+ 
 guitarists.add("Jimi Hendrix");
 guitarists.add("Eric Clapton");
 

@@ -14,5 +14,5 @@ export const fetchLukeSkywalker = async () => {
     return res.json();
   });
 
-  return data as LukeSkywalker;
+  return data as LukeSkywalker;  //this syntax is a cast
 };
