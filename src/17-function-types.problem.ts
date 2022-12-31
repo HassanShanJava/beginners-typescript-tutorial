@@ -3,7 +3,13 @@ import { Equal, Expect } from "./helpers/type-utils";
 /**
  * How do we type onFocusChange?
  */
-const addListener = (onFocusChange: unknown) => {
+
+
+type test=(id:boolean)=>void;   //single argument of type boolean
+                                // declares function type
+  //thisd syntax is usefull if u want top pass functiojn into another function
+  
+const addListener = (onFocusChange: test)=> { //function return void
   window.addEventListener("focus", () => {
     onFocusChange(true);
   });

@@ -1,8 +1,10 @@
 import { expect, it } from "vitest";
 
 const createCache = () => {
-  const cache = {};
-
+  const cache:{
+    [id:string]:string //Record<string,string> ->also used like defining set with stype
+  } = {};
+            
   const add = (id: string, value: string) => {
     cache[id] = value;
   };
